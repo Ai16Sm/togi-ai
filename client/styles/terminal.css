@@ -1,0 +1,108 @@
+.terminal-container {
+    width: 800px;
+    background: rgba(75, 0, 130, 0.2);  /* More transparent deep purple */
+    border: 2px solid var(--neon-pink);
+    border-radius: 15px;
+    margin: 0px auto;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.2);
+    backdrop-filter: blur(3px);  /* Lighter blur */
+}
+
+.terminal-header {
+    background: rgba(0, 0, 0, 0.2);  /* More transparent header */
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.terminal-controls {
+    display: none;
+}
+
+.control {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.control.red { background: #ff5f56; }
+.control.yellow { background: #ffbd2e; }
+.control.green { background: #27c93f; }
+
+.terminal-title {
+    color: var(--white);
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--neon-pink);
+}
+
+.terminal-body {
+    padding: 20px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);  /* Slightly dark transparent background */
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: var(--white);
+}
+
+.chat-input-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.1);  /* Very transparent input */
+    border: 1px solid var(--neon-pink);
+    border-radius: 5px;
+    padding: 12px;
+    color: var(--white);
+    font-size: 16px;
+}
+
+.chat-input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.send-button {
+    background: var(--gold);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.send-button:hover {
+    background: var(--neon-pink);
+    box-shadow: 0 0 10px var(--neon-pink);
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.user-message {
+    background: rgba(255, 255, 255, 0.1);  /* Transparent user messages */
+    margin-left: auto;
+    border: 1px solid var(--electric-blue);
+}
+
+.ai-message {
+    background: rgba(255, 215, 0, 0.1);  /* Transparent AI messages */
+    margin-right: auto;
+    border: 1px solid var(--gold);
+} 

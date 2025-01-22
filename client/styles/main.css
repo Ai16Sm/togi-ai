@@ -1,0 +1,169 @@
+:root {
+    --deep-purple: #4B0082;
+    --neon-pink: #FF00FF;
+    --gold: #FFD700;
+    --black: #1A1A1A;
+    --dark-gray: #333333;
+    --electric-blue: #00FFFF;
+    --white: #FFFFFF;
+    --primary-color: #1a1a1a;
+    --secondary-color: #ffd700;
+    --text-color: #ffffff;
+    --terminal-bg: rgba(0, 0, 0, 0.85);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    overflow-y: auto !important;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box {
+    width: 1000px;
+    min-height: 1600px;
+    height: auto;
+    position: relative;
+    background: rgba(26, 26, 26, 0.4); /* Semi-transparent background */
+    backdrop-filter: blur(5px);
+    border: 2px solid var(--neon-pink);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 100px 60px 80px 60px;
+}
+
+.togi-section {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.togi-image {
+    width: 600px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.togi-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.side-chip {
+    width: 150px;
+    height: auto;
+    opacity: 0.9;
+}
+
+.left-chip {
+    transform: rotate(-15deg);
+}
+
+.right-chip {
+    transform: rotate(15deg);
+}
+
+.moon-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000; /* Highest z-index to stay on top */
+    pointer-events: none; /* Allows clicking through */
+}
+
+.moon-image {
+    width: 100px;
+    height: auto;
+    opacity: 0.9;
+}
+
+.togi-logo-word {
+    margin-top: 20px;
+    width: 400px; /* Adjust width as needed */
+    display: flex;
+    justify-content: center;
+}
+
+.togi-logo-word img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.face-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.face {
+    width: 100%;
+    height: auto;
+}
+
+.eye {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center center;
+    /* Removed transition for more responsive movement */
+}
+
+.eye-container {
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.eye-container.left {
+    left: calc(40% - 25px);
+}
+
+.eye-container.right {
+    left: calc(35% + 95px);
+}
+
+.right-eye {
+    top: 42%; /* Adjust position as needed */
+    right: 25%;
+    transform: rotate(5deg);
+}

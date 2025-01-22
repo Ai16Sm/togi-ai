@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGI AI</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/buttons.css">
+    <link rel="stylesheet" href="styles/terminal.css">
+    <link rel="stylesheet" href="styles/floating.css">
+</head>
+<body>
+    <!-- Add moon image at the top -->
+    <div class="moon-container">
+        <img src="assets/images/moon.png" alt="Moon" class="moon-image">
+    </div>
+
+    <!-- Main Background -->
+    <div class="background-container">
+        <img src="assets/images/website_background.png" alt="Background" class="background-image">
+    </div>
+
+    
+    <!-- Social Buttons -->
+    <div class="social-buttons">
+        <a href="#" class="social-btn" title="Follow us on Twitter">
+            <img src="assets/images/social/twitter.png" alt="Twitter">
+        </a>
+        <a href="#" class="social-btn" title="Follow us on TikTok">
+            <img src="assets/images/social/tiktok.png" alt="TikTok">
+        </a>
+        <a href="#" class="social-btn" title="Follow us on Instagram">
+            <img src="assets/images/social/instagram.png" alt="Instagram">
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content-wrapper">
+        <div class="content-box">
+            <div class="nav-buttons">
+                <button class="nav-btn">Team</button>
+                <button class="nav-btn">Roadmap</button>
+                <button class="nav-btn">Whitepaper</button>
+                <button class="nav-btn">What is TOGI AI</button>
+            </div>
+            <button class="nav-btn buy-btn">Buy TOGI</button>
+            <div class="togi-section">
+                <img src="assets/images/general_chip.png" alt="Left Chip" class="side-chip left-chip">
+                <div class="togi-image">
+                    <div class="face-container">
+                        <img src="assets/images/togi_face.png" alt="TOGI" class="face">
+                        <div class="eye-container left">
+                            <img src="assets/images/eye.png" alt="Left Eye" class="eye">
+                        </div>
+                        <div class="eye-container right">
+                            <img src="assets/images/eye.png" alt="Right Eye" class="eye">
+                        </div>
+                    </div>
+                </div>
+                <img src="assets/images/general_chip.png" alt="Right Chip" class="side-chip right-chip">
+            </div>
+            <div class="togi-logo-word">
+                <img src="assets/images/togi_logo_word.png" alt="TOGI Logo">
+            </div>
+            
+            <!-- Adding Terminal -->
+            <div class="terminal-container">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <div class="control red"></div>
+                        <div class="control yellow"></div>
+                        <div class="control green"></div>
+                    </div>
+                    <div class="terminal-title">TOGI AI Chat</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="chat-messages">
+                        <!-- Messages will be added here dynamically -->
+                    </div>
+                    <div class="chat-input-wrapper">
+                        <input type="text" class="chat-input" placeholder="Ask TOGI anything...">
+                        <button class="send-button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Move floating-elements container here, right before closing body tag -->
+    <div class="floating-elements"></div>
+    <script src="js/floatingElements.js"></script>
+    <script src="js/eyeTracking.js"></script>
+    <script src="js/chatLogic.js"></script>
+</body>
+</html>

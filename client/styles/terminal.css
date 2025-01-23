@@ -105,4 +105,37 @@
     background: rgba(255, 215, 0, 0.1);  /* Transparent AI messages */
     margin-right: auto;
     border: 1px solid var(--gold);
+}
+
+@media screen and (max-width: 768px) {
+    .terminal-container {
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .terminal-body {
+        min-height: 300px;
+        padding: 10px;
+    }
+
+    .chat-input-wrapper {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .chat-input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .send-button {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .message {
+        max-width: 90%;
+        font-size: 14px;
+        padding: 8px;
+    }
 } 

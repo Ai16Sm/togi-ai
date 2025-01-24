@@ -112,19 +112,27 @@
         flex-wrap: wrap;
         gap: 8px;
         justify-content: center;
+        padding: 0 10px;
     }
 
     .nav-btn {
-        font-size: 0.9em;
-        padding: 8px 15px;
+        font-size: 0.8em;
+        padding: 8px 12px;
         width: calc(50% - 10px);
-        white-space: nowrap;
+        white-space: normal;
+        height: auto;
+        min-height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
     .buy-btn {
-        font-size: 1.4em;
-        padding: 15px 40px;
+        font-size: 1.2em;
+        padding: 12px 30px;
         margin-top: 15px;
+        width: auto;
     }
 
     .social-buttons {

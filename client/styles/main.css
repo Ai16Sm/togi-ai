@@ -104,8 +104,8 @@ html, body {
     position: fixed;
     top: 20px;
     left: 20px;
-    z-index: 1000; /* Highest z-index to stay on top */
-    pointer-events: none; /* Allows clicking through */
+    z-index: 2; /* Lower z-index to be behind content */
+    pointer-events: none;
 }
 
 .moon-image {
